@@ -506,6 +506,15 @@ Also see [[AdvancedOptions]]</pre>
 </div>
 </div>
 <!--POST-SHADOWAREA-->
+
+<!--TIDDLYSPOT_INJECT-->
+<div style="display:none"><img src="http://tiddlyspot.com/_ts/stats/timpreece"/></div>
+<!--TCEJNI_TOPSYLDDIT-->
+
+<!--TIDDLYSPOT_INJECT-->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct="UA-96965-3";urchinTracker();</script>
+
+<!--TCEJNI_TOPSYLDDIT-->
 <div id="storeArea">
 <div title="Apache" creator="YourName" modifier="timpreece" created="201411291035" modified="201411291050" changecount="5">
 <pre>!Add a new site using Apache 2
@@ -547,6 +556,20 @@ http://stackoverflow.com/questions/17519078/initializing-a-generic-variable-from
 <div title="C++" creator="timpreece" modifier="timpreece" created="201408301208" changecount="1">
 <pre>When should someone use private virtuals? http://www.parashift.com/c++-faq/private-virtuals.html</pre>
 </div>
+<div title="Clean Code" creator="timpreece" modifier="timpreece" created="201504021246" modified="201504021249" changecount="4">
+<pre>! Design Patterns
+* Design Patterns: http://www.oodesign.com/
+!! Database
+* [[&quot;Active Record vs Data Mapper for Persistence&quot; - Russell Walker|http://russellscottwalker.blogspot.sg/2013/10/active-record-vs-data-mapper.html]]
+* [[&quot;7 Patterns to Refactor Fat ActiveRecord Models&quot; |http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/]]
+
+! Refactoring
+* http://sourcemaking.com/refactoring
+
+! SOLID
+* Principles of OOD - SOLID etc ... http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOodType 
+* Video: [[The Single Responsibility Principle - Robert C Martin  |https://www.youtube.com/watch?v=Gt0M_OHKhQE]]</pre>
+</div>
 <div title="Configure Email" creator="timpreece" modifier="timpreece" created="201408301229" modified="201408301229" changecount="2">
 <pre>! Ubuntu
 http://askubuntu.com/questions/47609/how-to-have-my-php-send-mail
@@ -566,18 +589,16 @@ and restart the server after changing the /etc/postfix/sasl/passwd file.
 <div title="DefaultTiddlers" creator="timpreece" modifier="timpreece" created="201407121710" changecount="1">
 <pre>[[Home]]</pre>
 </div>
-<div title="Deployment" creator="YourName" modifier="timpreece" created="201409281512" modified="201410020832" changecount="2">
+<div title="Deployment" creator="YourName" modifier="YourName" created="201409281512" modified="201504271908" changecount="3">
 <pre>* http://devo.ps/blog/vagrant-docker-and-ansible-wtf/
-* [[Vagrant]]</pre>
+* [[Vagrant]]
+! Ansible
+* Vagrant &amp; Ansible Quickstart Tutorial - Adam Brett: https://adamcod.es/2014/09/23/vagrant-ansible-quickstart-tutorial.html</pre>
 </div>
-<div title="Design" creator="timpreece" modifier="YourName" created="201408301222" modified="201409131311" changecount="3">
-<pre>! General
-* Principles of OOD - SOLID etc ... http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOodType 
-* Design Patterns: http://www.oodesign.com/
-
-! ORM
-* [[&quot;Active Record vs Data Mapper for Persistence&quot; - Russell Walker|http://russellscottwalker.blogspot.sg/2013/10/active-record-vs-data-mapper.html]]
-* [[&quot;7 Patterns to Refactor Fat ActiveRecord Models&quot; |http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/]]</pre>
+<div title="Development Tools" creator="timpreece" modifier="timpreece" created="201508071936" modified="201508311027" changecount="4">
+<pre>[[Vim]]
+[[PyCharm]]
+[[tmux]]</pre>
 </div>
 <div title="Entity Framework" creator="timpreece" modifier="timpreece" created="201408121857" modified="201412111515" tags="dotNET" changecount="11">
 <pre>* [[http://msdn.microsoft.com/en-us/data/jj729737|http://msdn.microsoft.com/en-us/data/jj729737]] Gives guidance lifetime of a DBContext.
@@ -602,7 +623,17 @@ Saving any changes to entities that outlive the DbContext used to read them is t
 
 </pre>
 </div>
-<div title="Git" creator="timpreece" modifier="timpreece" created="201407131037" modified="201408171546" tags="Git Setup" changecount="20">
+<div title="Functional Testing" creator="Tim Preece" modifier="YourName" created="201507160946" modified="201508061705" changecount="4">
+<pre>!The Page Object pattern
+* [[Page Objects - selenium|https://code.google.com/p/selenium/wiki/PageObjects]]
+* [[PageObject - Martin Fowler|http://martinfowler.com/bliki/PageObject.html]]
+
+!Mock/Stub Services
+* https://en.wikipedia.org/wiki/Service_virtualization
+* [[Mountebank|www.mbtest.org/]]
+* https://github.com/vcr/vcr</pre>
+</div>
+<div title="Git" creator="timpreece" modifier="YourName" created="201407131037" modified="201508041832" tags="Git Setup" changecount="21">
 <pre>! Branching and Merging
 By default git tries to merge by 'fast forwarding'.  If it does a merge via 'fast forwarding' the fact that a branch existed will be visible in the commit history: http://ariya.ofilabs.com/2013/09/fast-forward-git-merge.html.  I think fast forwarding is useful for situations where multiple developers are working on a particular branch.  For most other situations you'd want visibility of that branch thus will want to use the no ff flag.
 
@@ -666,7 +697,10 @@ branch_name would be for example, master or development.
 !! Pull changes from remote repo
 {{{
 git pull origin master
-}}}</pre>
+}}}
+
+!! Forking
+* http://dret.typepad.com/dretblog/2013/02/github-fork-etiquette.html</pre>
 </div>
 <div title="Home" creator="timpreece" modifier="timpreece" created="201407121708" modified="201407121710" changecount="3">
 <pre>Tiddly Wiki Admin
@@ -674,6 +708,10 @@ git pull origin master
 [[WelcomeToTiddlyspot]] 
 [[GettingStarted]]
 </pre>
+</div>
+<div title="JavaScript Tools and Frameworks" creator="YourName" modifier="YourName" created="201503311238" changecount="1">
+<pre>! Node.js
+[[Why The Hell Would I Use Node.js? A Case-by-Case Tutorial Tomislav Capan | http://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js]]</pre>
 </div>
 <div title="LoadRemoteFileThroughProxy" modifier="YourName" created="200703202229" modified="201407121237" tags="systemConfig">
 <pre>/***
@@ -706,28 +744,33 @@ loadRemoteFile = function(url,callback,params)
 //}}}
 </pre>
 </div>
-<div title="MainMenu" creator="timpreece" modifier="YourName" created="201407121724" modified="201411291031" changecount="17">
+<div title="MainMenu" creator="timpreece" modifier="timpreece" created="201407121724" modified="201508071936" changecount="24">
 <pre>[[Home]]
 ----
 [[Bash]]
 [[C++]]
 [[C#]]
+[[PHP]]
 [[Python]]
 [[VB]]
 ----
 [[dot NET]]
+[[JavaScript Tools and Frameworks]]
 [[Python Frameworks]]
 ----
 [[Git]]
 [[SVN]]
 ----
-[[Design]]
-[[Testing]]
+[[Clean Code]]
 [[Craftsmanship]]
+[[Testing]]
+[[Development Tools]]
 ----
 [[Apache]]
 [[Configure Email]]
 [[Deployment]]
+----
+[[Ubuntu]]
 ----
 [[Books]]
 ----
@@ -766,6 +809,10 @@ Make a note of whether the &quot;Run NUnit&quot; command you added in the previo
 * Select &quot;Tools&quot; in Categories list &gt; External Command 3 (or whatever)
 * You should now have a button in the tool bar to &quot;Run NUnit&quot; tests.
 </pre>
+</div>
+<div title="PHP" creator="YourName" modifier="YourName" created="201504201343" changecount="1">
+<pre>! Snippets
+Dynamic Proxies: http://blog.macrominds.de/2008/05/dynamic-proxy-in-php-5/</pre>
 </div>
 <div title="PasswordOptionsPlugin" modifier="YourName" created="200704220851" modified="201407121237" tags="systemConfig">
 <pre>/***
@@ -847,12 +894,30 @@ merge(config.optionsDesc,{
 */
 //}}}</pre>
 </div>
-<div title="Python" creator="YourName" modifier="timpreece" created="201409201001" modified="201409251622" changecount="8">
+<div title="PyCharm" creator="timpreece" modifier="timpreece" created="201508262123" changecount="1">
+<pre>! Adding a virtualenv
+* File &gt; Settings &gt; Project: python
+* Click the cog button at the end of the end of the &quot;Project Interpreter&quot; text box
+* Select &quot;Add Local&quot;
+* Navigate to the virtualenv folder (this is the folder that you get to when you run the cdvirtualenv command - see virtualenvwrapper)
+
+! Running Tests E.G.
+* Run &gt; Edit Configurations ...
+* Click the &quot;+&quot; button in the top left
+* Python tests &gt; unit tests
+* Select &quot;All in folder&quot; and enter dir where you can find tests
+* Check &quot;Pattern&quot; and enter &quot;*.py&quot;
+* Enter the project root as the working directory
+* Give it a name and save</pre>
+</div>
+<div title="Python" creator="YourName" modifier="YourName" created="201409201001" modified="201509022102" changecount="10">
 <pre>Python 2 tutorial https://docs.python.org/2/tutorial/index.html
 [[Python General]]
 [[Python Gotchas]]
 [[Python Best Practice]]
+[[Python Packaging]]
 [[Python Performance]]
+[[Python Testing]]
 [[Python Threading]]</pre>
 </div>
 <div title="Python Best Practice" creator="timpreece" modifier="timpreece" created="201409201047" modified="201409201109" changecount="4">
@@ -910,7 +975,7 @@ class TransitionError(Error):
 * Decorators with arguments, http://www.artima.com/weblogs/viewpost.jsp?thread=240845
 * Use functools.wraps with decorators to copy over docstrings etc to decorated function, https://docs.python.org/dev/library/functools.html#functools.wraps</pre>
 </div>
-<div title="Python Frameworks" creator="timpreece" modifier="timpreece" created="201409131236" changecount="1">
+<div title="Python Frameworks" creator="timpreece" modifier="YourName" created="201409131236" modified="201503311237" changecount="3">
 <pre>!Web
 !! Comparisons
 * [[&quot;Flask vs. Django vs. Pyramid vs. Plone&quot; - Denis Krienbühl|http://blog.stacktrace.ch/post/49178654214]]
@@ -995,8 +1060,69 @@ The syntax has some extra quirks to accommodate these. Empty tuples are construc
 ('hello',)
 }}}</pre>
 </div>
+<div title="Python Packaging" creator="YourName" modifier="YourName" created="201509022102" modified="201509062301" changecount="12">
+<pre>!Requirements
+* https://caremad.io/2013/07/setup-vs-requirement/
+
+!Folder structure
+3 Main options:
+1)
+{{{
+root/
+  src/
+    packagename/
+      __init__.py
+      amodule.py
+      ...
+  test/
+    __init__.py
+    test_amodule.py
+    ...
+}}}
+I like this option best because I can add src to my PYTHONPATH to test the code in the src/ dir or not alter the PYTHONPATH and test installed code.
+
+2) 
+{{{
+root/
+  packagename/
+    __init__.py
+    amodule.py
+    ...
+    test/
+      __init__.py
+      test_amodule.py
+      ...
+}}}
+When I run the tests from the root dir the tests are immediately available, which makes it more difficult if you'd like to run the tests to test an installed application.
+
+3) 
+{{{
+root/
+  packagename/
+    __init__.py
+    amodule.py
+    ...
+  test/
+    __init__.py
+    test_amodule.py
+    ...
+}}}
+
+I don't like this option because I don't want test code installed with the package.  A test suite for an application that uses my package may discover these tests and try to run them.  These tests are for the package so shouldn't be run when you're trying to test an application that uses them. 
+
+!!References
+* http://blog.ionelmc.ro/2014/05/25/python-packaging/
+* http://www.kennethreitz.org/essays/repository-structure-and-python
+* http://as.ynchrono.us/2007/12/filesystem-structure-of-python-project_21.html
+* https://www.jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/
+* http://learnpythonthehardway.org/book/ex46.html</pre>
+</div>
 <div title="Python Performance" creator="timpreece" modifier="timpreece" created="201409201129" modified="201409201142" changecount="2">
 <pre>* Efficient String Concatenation in Python http://www.skymind.com/~ocrow/python_string/</pre>
+</div>
+<div title="Python Testing" creator="timpreece" modifier="timpreece" created="201508071934" changecount="1">
+<pre>!Coverage
+* http://nedbatchelder.com/code/coverage/</pre>
 </div>
 <div title="Python Threading" creator="timpreece" modifier="timpreece" created="201409251629" changecount="1">
 <pre>It's best to avoid threading in CPython due to the effects of the Global Interpreter Lock, which can make a multi-threaded program run slower than program run in a single thread.  As an alternative multiple processes can be used.
@@ -1037,8 +1163,26 @@ To reference a project right-click on the project that will hold the reference &
 <div title="SiteTitle" creator="timpreece" modifier="timpreece" created="201407121336" changecount="1">
 <pre>Tim Preece Wiki</pre>
 </div>
-<div title="Testing" creator="timpreece" modifier="timpreece" created="201408121815" changecount="1">
-<pre>[[Unit Testing]]</pre>
+<div title="Testing" creator="timpreece" modifier="Tim Preece" created="201408121815" modified="201507160949" changecount="4">
+<pre>[[Functional Testing]]
+[[Unit Testing]]
+[[Testing Legacy Code]]
+</pre>
+</div>
+<div title="Testing Legacy Code" creator="Tim Preece" modifier="timpreece" created="201507160951" modified="201508061944" changecount="7">
+<pre>! Golden Master
+[[&quot;Testing legacy code with Golden Master&quot; - Sandro Mancuso|http://craftedsw.blogspot.co.uk/2012/11/testing-legacy-code-with-golden-master.html]]
+[[&quot;Refactoring Legacy Code: Part 1 - The Golden Master&quot; - Patkos Csaba|http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-1-the-golden-master--cms-20331]]
+
+! Approval Tests 
+* http://approvaltests.com/
+
+! Selenium Firefox Plugin
+!! Installation
+* Download and install Selenium IDE from http://www.seleniumhq.org/download/#side_plugins
+* Install the Selenium IDE button from https://addons.mozilla.org/en-us/firefox/addon/selenium-ide-button/
+
+</pre>
 </div>
 <div title="Tiddly Tips" creator="timpreece" modifier="timpreece" created="201408091230" modified="201408121820" changecount="2">
 <pre>! Formatting
@@ -1112,13 +1256,18 @@ merge(config.shadowTiddlers,{
 //}}}
 </pre>
 </div>
-<div title="Unit Testing" creator="timpreece" modifier="timpreece" created="201408121822" modified="201408161607" tags="Testing" changecount="6">
+<div title="Ubuntu" creator="timpreece" modifier="timpreece" created="201504212201" changecount="1">
+<pre>Desktop installation: http://www.everydaylinuxuser.com/2013/09/install-ubuntu-linux-alongside-windows.html</pre>
+</div>
+<div title="Unit Testing" creator="timpreece" modifier="timpreece" created="201408121822" modified="201508280723" tags="Testing" changecount="9">
 <pre>! Test Doubles
 * [[Understanding Test Doubles (Mock vs Stub) - Adam Brett|http://adamcod.es/2014/05/15/test-doubles-mock-vs-stub.html]]
+* [[Loosely Coupled Tests - Chris Jordan|http://blog.8thlight.com/chris-jordan/2015/08/26/loosely-coupled-testing.html]].  Talks about using a Fake across multiple tests instead of re-writing similar mocks/stubs.  This way if the dependent object gets changed you only need to make the associated change once in the tests - to the Fake.
 
 ! State vs Behaviour Verification 
 * [[State vs Behaviour Verification - Santiago Palladino|http://www.manas.com.ar/spalladino/2009/04/30/state-vs-behaviour-verification/]]
 * [[Mocks Aren't Stubs - Martin Fowler|http://martinfowler.com/articles/mocksArentStubs.html]]
+* [[Mock Roles, not Objects - Freeman, Pryce, Mackinnon, Walnes|http://www.jmock.org/oopsla2004.pdf]]
 
 An interesting exchange between two authors on the merits of mocks vs stubs:
 * [[Stop Using Mocks - Karl Seguin|http://openmymind.net/2011/3/23/Stop-Using-Mocks/]]
@@ -1135,18 +1284,18 @@ An interesting exchange between two authors on the merits of mocks vs stubs:
 * [[The Art of Unit Testing - Roy Osherove|http://artofunittesting.com/]]
 * [[XUnit Test Patterns - Gerard Meszaros|http://xunitpatterns.com/]].  My notes: [[xUnit Test Patterns: Refactoring Test Code - Gerard Meszaros]]</pre>
 </div>
-<div title="UploadLog" modifier="timpreece" created="201407121335" modified="201412111516">
+<div title="UploadLog" modifier="timpreece" created="201407121335" modified="201509062302">
 <pre>| !date | !user | !location | !storeUrl | !uploadDir | !toFilename | !backupdir | !origin |
-| 28/09/2014 16:12:42 | timpreece | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
-| 02/10/2014 09:39:47 | timpreece | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
-| 05/10/2014 15:30:31 | timpreece | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . | ok |
-| 05/10/2014 18:30:50 | timpreece | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
-| 17/10/2014 17:51:09 | timpreece | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
-| 26/10/2014 16:48:16 | YourName | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
-| 29/11/2014 10:35:59 | timpreece | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . | ok |
-| 29/11/2014 10:50:26 | timpreece | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . | ok |
-| 29/11/2014 10:50:51 | timpreece | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
-| 11/12/2014 15:16:00 | timpreece | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |</pre>
+| 06/08/2015 20:40:55 | timpreece | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
+| 06/08/2015 20:45:42 | timpreece | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
+| 07/08/2015 20:34:24 | timpreece | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
+| 07/08/2015 20:37:45 | timpreece | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
+| 26/08/2015 22:24:29 | timpreece | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
+| 28/08/2015 08:21:15 | timpreece | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
+| 28/08/2015 08:23:30 | timpreece | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
+| 31/08/2015 11:28:10 | timpreece | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
+| 02/09/2015 22:02:46 | YourName | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
+| 07/09/2015 00:02:18 | timpreece | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |</pre>
 </div>
 <div title="UploadPlugin" modifier="YourName" created="200808080918" modified="201407121237" tags="systemConfig">
 <pre>/***
@@ -1713,12 +1862,18 @@ When trying to install Windows Vista I found that double clicking on the vagrant
 * you can get the port to use by running {{{vagrant ssh}}} in the vagrant project
 * username = vagrant</pre>
 </div>
+<div title="Vim" creator="timpreece" modifier="timpreece" created="201508071937" changecount="1">
+<pre>* [[Vim as a Python IDE|http://michiganlabs.com/vim-python-ide/#.VcUHpbz8s8oType the text for 'Vim']]</pre>
+</div>
 <div title="dot NET" creator="timpreece" modifier="timpreece" created="201408091042" modified="201409131224" changecount="10">
 <pre>[[Setting up solutions and Projects in Visual Studio]]
 [[NUnit]]
 [[Entity Framework]]
 [[Castle ActiveRecord|http://www.castleproject.org/projects/activerecord/]]
 [[Castle Dynamic Proxies|http://www.castleproject.org/projects/dynamicproxy/]]</pre>
+</div>
+<div title="tmux" creator="timpreece" modifier="timpreece" created="201508311027" changecount="1">
+<pre>* https://www.howtoforge.com/sharing-terminal-sessions-with-tmux-and-screen</pre>
 </div>
 <div title="xUnit Test Patterns: Refactoring Test Code - Gerard Meszaros" creator="YourName" modifier="timpreece" created="201408161115" modified="201408161550" tags="Books Testing" changecount="11">
 <pre>!Chapter 10 - Result Verification
