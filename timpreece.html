@@ -506,6 +506,15 @@ Also see [[AdvancedOptions]]</pre>
 </div>
 </div>
 <!--POST-SHADOWAREA-->
+
+<!--TIDDLYSPOT_INJECT-->
+<div style="display:none"><img src="http://tiddlyspot.com/_ts/stats/timpreece"/></div>
+<!--TCEJNI_TOPSYLDDIT-->
+
+<!--TIDDLYSPOT_INJECT-->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct="UA-96965-3";urchinTracker();</script>
+
+<!--TCEJNI_TOPSYLDDIT-->
 <div id="storeArea">
 <div title="Apache" creator="YourName" modifier="timpreece" created="201411291035" modified="201411291050" changecount="5">
 <pre>!Add a new site using Apache 2
@@ -667,7 +676,7 @@ Saving any changes to entities that outlive the DbContext used to read them is t
 * [[Mountebank|www.mbtest.org/]]
 * https://github.com/vcr/vcr</pre>
 </div>
-<div title="Git" creator="timpreece" modifier="YourName" created="201407131037" modified="201508041832" tags="Git Setup" changecount="21">
+<div title="Git" creator="timpreece" modifier="YourName" created="201407131037" modified="201611171640" tags="Git Setup" changecount="24">
 <pre>! Branching and Merging
 By default git tries to merge by 'fast forwarding'.  If it does a merge via 'fast forwarding' the fact that a branch existed will be visible in the commit history: http://ariya.ofilabs.com/2013/09/fast-forward-git-merge.html.  I think fast forwarding is useful for situations where multiple developers are working on a particular branch.  For most other situations you'd want visibility of that branch thus will want to use the no ff flag.
 
@@ -676,8 +685,8 @@ Because it seems to be the general consensus that the master should always be re
 
 ! Setup
 !! Windows
-* Downloaded [[Github for Windows|https://windows.github.com]]
-* The &quot;Git Shell&quot; shortcut doesn't work so had to create a batch file on my desktop that runs, {{{ C:\Users\Tim\AppData\Local\GitHub\GitHub.appref-ms --open-shell&quot; }}}
+* Use https://git-for-windows.github.io/
+* Can create public-private key pairs for auth using {{{ ssh-keygen -t rsa }}}
 
 ! Using git
 
@@ -743,6 +752,10 @@ git pull origin master
 [[GettingStarted]]
 </pre>
 </div>
+<div title="Internet Tools" creator="YourName" modifier="YourName" created="201611141112" modified="201611141113" changecount="2">
+<pre>! Urls
+* Google url shortener: http://goo.gl/</pre>
+</div>
 <div title="Java" creator="timpreece" modifier="timpreece" created="201509270851" changecount="1">
 <pre>* jconsole, GUI for monitoring MBeans via JMX http://docs.oracle.com/javase/7/docs/technotes/guides/management/jconsole.html</pre>
 </div>
@@ -802,7 +815,7 @@ loadRemoteFile = function(url,callback,params)
 //}}}
 </pre>
 </div>
-<div title="MainMenu" creator="timpreece" modifier="YourName" created="201407121724" modified="201611121824" changecount="31">
+<div title="MainMenu" creator="timpreece" modifier="YourName" created="201407121724" modified="201611141112" changecount="32">
 <pre>[[Home]]
 ----
 [[Bash]]
@@ -830,6 +843,7 @@ loadRemoteFile = function(url,callback,params)
 [[Craftsmanship]]
 [[Testing]]
 [[Development Tools]]
+[[Internet Tools]]
 ----
 [[Apache]]
 [[Configure Email]]
@@ -1133,7 +1147,7 @@ The syntax has some extra quirks to accommodate these. Empty tuples are construc
 ('hello',)
 }}}</pre>
 </div>
-<div title="Python Packaging" creator="YourName" modifier="YourName" created="201509022102" modified="201512142026" changecount="14">
+<div title="Python Packaging" creator="YourName" modifier="YourName" created="201509022102" modified="201611171634" changecount="18">
 <pre>! PyPI
 * http://peterdowns.com/posts/first-time-with-pypi.html
 * https://pypi.python.org/pypi/twine
@@ -1156,7 +1170,7 @@ root/
     test_amodule.py
     ...
 }}}
-I like this option best because I can add src to my PYTHONPATH to test the code in the src/ dir or not alter the PYTHONPATH and test installed code.
+I like this option best because I can add src to my PYTHONPATH to test the code in the src/ dir or not alter the PYTHONPATH and test installed code.  Need to include {{{ package_dir = {'':'src'} }}} in setup().
 
 2) 
 {{{
@@ -1170,7 +1184,7 @@ root/
       test_amodule.py
       ...
 }}}
-When I run the tests from the root dir the tests are immediately available, which makes it more difficult if you'd like to run the tests to test an installed application.
+I don't like this option because I don't want test code installed with the package (though it can be excluded in find_packages).  A test suite for an application that uses my package may discover these tests and try to run them.  These tests are for the package so shouldn't be run when you're trying to test an application that uses them. 
 
 3) 
 {{{
@@ -1184,8 +1198,8 @@ root/
     test_amodule.py
     ...
 }}}
+When I run the tests from the root dir the tests are immediately available, which makes it more difficult if you'd like to run the tests to test an installed application.
 
-I don't like this option because I don't want test code installed with the package.  A test suite for an application that uses my package may discover these tests and try to run them.  These tests are for the package so shouldn't be run when you're trying to test an application that uses them. 
 
 !!References
 * http://blog.ionelmc.ro/2014/05/25/python-packaging/
@@ -1388,18 +1402,18 @@ An interesting exchange between two authors on the merits of mocks vs stubs:
 * [[The Art of Unit Testing - Roy Osherove|http://artofunittesting.com/]]
 * [[XUnit Test Patterns - Gerard Meszaros|http://xunitpatterns.com/]].  My notes: [[xUnit Test Patterns: Refactoring Test Code - Gerard Meszaros]]</pre>
 </div>
-<div title="UploadLog" modifier="YourName" created="201407121335" modified="201611121829">
+<div title="UploadLog" modifier="YourName" created="201407121335" modified="201611171640">
 <pre>| !date | !user | !location | !storeUrl | !uploadDir | !toFilename | !backupdir | !origin |
-| 24/04/2016 22:24:05 | YourName | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . | ok |
-| 24/04/2016 22:30:49 | YourName | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
-| 25/07/2016 11:24:03 | YourName | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
 | 25/07/2016 11:24:10 | YourName | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
 | 25/07/2016 11:25:51 | YourName | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
 | 06/08/2016 12:40:07 | YourName | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . | ok |
 | 06/08/2016 13:13:29 | YourName | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . | ok |
 | 06/08/2016 13:41:01 | YourName | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
 | 12/11/2016 18:24:03 | YourName | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . | ok |
-| 12/11/2016 18:29:19 | YourName | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |</pre>
+| 12/11/2016 18:29:19 | YourName | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
+| 14/11/2016 11:13:26 | YourName | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
+| 17/11/2016 16:35:05 | YourName | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |
+| 17/11/2016 16:40:34 | YourName | [[/|http://timpreece.tiddlyspot.com/]] | [[store.cgi|http://timpreece.tiddlyspot.com/store.cgi]] | . | [[index.html | http://timpreece.tiddlyspot.com/index.html]] | . |</pre>
 </div>
 <div title="UploadPlugin" modifier="YourName" created="200808080918" modified="201407121237" tags="systemConfig">
 <pre>/***
